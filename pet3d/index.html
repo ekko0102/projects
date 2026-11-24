@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>TripoSR 3D 貓動畫</title><style>
+:root{color-scheme:light dark}
+body{font-family:system-ui,"Microsoft JhengHei","PingFang TC",sans-serif;max-width:1000px;margin:0 auto;padding:24px 16px;line-height:1.6}
+h1{font-size:1.6rem;margin:0 0 4px}
+h2{font-size:1.15rem;margin:28px 0 8px}
+p.intro,footer{color:#777;font-size:.9rem}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #8884;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#8882;white-space:nowrap}
+td.name{font-weight:600;width:22%}
+td.status{width:17%}
+td.open{width:19%}
+a.btn{display:inline-block;padding:4px 14px;border-radius:6px;background:#2563eb;color:#fff;text-decoration:none}
+.note{color:#777;font-size:.85rem}
+@media(max-width:640px){th,td{padding:6px;font-size:.9rem}}
+</style></head><body><h1>TripoSR 3D 貓動畫</h1><p id="go"><a class="btn" href="https://bottle-thought-allows-asking.trycloudflare.com" rel="noopener noreferrer">開啟</a> <span class="note">需老闆電腦開著</span></p><p id="off" hidden>目前離線（需老闆電腦開著）</p><script>
+function once(u){var c=new AbortController();setTimeout(function(){c.abort()},8000);
+return fetch(u,{mode:"cors",cache:"no-store",signal:c.signal}).then(function(r){if(!r.ok)throw 0})}
+function ping(u){return once(u).catch(function(){return new Promise(function(r){setTimeout(r,4000)}).then(function(){return once(u)})})}
+ping("https://bottle-thought-allows-asking.trycloudflare.com/__alive").then(function(){location.replace("https://bottle-thought-allows-asking.trycloudflare.com")}).catch(function(){document.getElementById("go").hidden=true;document.getElementById("off").hidden=false});</script><p><a href="../">← 回 C8KCZ 專案一覽</a></p></body></html>
