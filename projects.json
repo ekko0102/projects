@@ -43,18 +43,6 @@
           "updated": "2026-11-24",
           "url": "",
           "offline_note": "尚無線上版"
-        },
-        {
-          "id": "beatmarket",
-          "name": "Beat Marketplace",
-          "desc": "台灣版的 Beat 交易平台。",
-          "status": "⏸ 暫停",
-          "state": "暫停",
-          "percent": 40,
-          "next": "待指示",
-          "updated": "2026-11-24",
-          "url": "",
-          "offline_note": "尚無線上版"
         }
       ]
     }
