@@ -26,4 +26,4 @@ tr[data-href]:hover{background:#2563eb14}
 function once(u){var c=new AbortController();setTimeout(function(){c.abort()},8000);
 return fetch(u,{mode:"cors",cache:"no-store",signal:c.signal}).then(function(r){if(!r.ok)throw 0})}
 function ping(u){return once(u).catch(function(){return new Promise(function(r){setTimeout(r,4000)}).then(function(){return once(u)})})}
-ping("https://pet.jieyue.app/__alive").then(function(){location.replace("https://pet.jieyue.app")}).catch(function(){document.getElementById("go").hidden=true;document.getElementById("off").hidden=false});</script><p><a href="../">← 回 C8KCZ 專案一覽</a></p></body></html>
+ping("https://pet.jieyue.app/__alive").then(function(){location.replace("https://pet.jieyue.app")}).catch(function(){document.getElementById("go").hidden=true;document.getElementById("off").hidden=false});</script><p><a href="../">← 回 公司專案一覽</a></p></body></html>
