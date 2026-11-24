@@ -28,7 +28,6 @@ tr[data-href]:hover{background:#2563eb14}
 </style></head><body>
 <h1>C8KCZ 專案一覽</h1>
 <p class="intro">點任一列（或「開啟」）可以直接在瀏覽器操作該專案。進度欄顯示狀態、完成度與下一步。標示「需老闆電腦開著」的專案跑在老闆的電腦上，電腦沒開時會顯示「目前離線」；標示「尚無線上版」的是桌面程式或還沒有網頁版的專案。</p>
-<h2></h2>
 <table><thead><tr><th>專案名稱</th><th>簡短說明</th><th>進度</th><th>開啟</th></tr></thead><tbody>
 <tr id="pet3d" data-href="https://pet.jieyue.app" title="點這一列開啟"><td class="name">TripoSR 3D 貓動畫</td><td>一張寵物照片或一句文字，自動做成會動的 3D 模型（待機、跳、走路等動作），可下載影片與 3D 檔。</td><td class="status"><span class="tag run">進行中</span><span class="pct">70%</span><div class="bar run" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><i style="width:70%"></i></div><div>🔄 雛型可操作</div><div class="note">下一步：提升畫質與動作自然度（對照真貓照片）</div><div class="note">更新：2026-11-24</div></td><td class="open"><div class="live"><a class="btn" href="https://pet.jieyue.app" data-ping="https://pet.jieyue.app/__alive" target="_blank" rel="noopener noreferrer">開啟</a><div class="note">需老闆電腦開著</div></div><span class="note off" hidden>目前離線（需老闆電腦開著）</span></td></tr>
 <tr id="agentcompany"><td class="name">AgentCompany</td><td>用多個 AI 員工分工的個人助理系統（秘書、工程、研究等部門）。</td><td class="status"><span class="tag run">進行中</span><span class="pct">80%</span><div class="bar run" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><i style="width:80%"></i></div><div>🔄 營運中</div><div class="note">下一步：持續營運與擴充部門</div><div class="note">更新：2026-11-24</div></td><td class="open"><span class="note">尚無線上版（內部系統）</span></td></tr>
@@ -45,6 +44,7 @@ document.querySelectorAll("a[data-ping]").forEach(function(a){ping(a.dataset.pin
 var td=a.closest("td");td.querySelector(".live").hidden=true;td.querySelector(".off").hidden=false;
 a.closest("tr").removeAttribute("data-href")})});
 document.querySelectorAll("tr[data-href]").forEach(function(tr){tr.addEventListener("click",function(ev){
-var u=tr.getAttribute("data-href");if(!u||ev.target.closest("a"))return;window.open(u,"_blank","noopener,noreferrer")})});
+var u=tr.getAttribute("data-href");if(!u||ev.target.closest("a"))return;
+if(String(window.getSelection?window.getSelection():"").trim())return;window.open(u,"_blank","noopener,noreferrer")})});
 </script>
 </body></html>
