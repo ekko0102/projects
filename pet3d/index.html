@@ -8,11 +8,19 @@ p.intro,footer{color:#777;font-size:.9rem}
 table{width:100%;border-collapse:collapse}
 th,td{border:1px solid #8884;padding:8px 10px;text-align:left;vertical-align:top}
 th{background:#8882;white-space:nowrap}
-td.name{font-weight:600;width:22%}
-td.status{width:17%}
-td.open{width:19%}
+td.name{font-weight:600;width:20%}
+td.status{width:28%}
+td.open{width:15%}
 a.btn{display:inline-block;padding:4px 14px;border-radius:6px;background:#2563eb;color:#fff;text-decoration:none}
 .note{color:#777;font-size:.85rem}
+tr[data-href]{cursor:pointer}
+tr[data-href]:hover{background:#2563eb14}
+.tag{display:inline-block;padding:1px 10px;border-radius:999px;font-size:.8rem;font-weight:600;color:#fff;background:#6b7280}
+.tag.run{background:#2563eb}.tag.pause{background:#b45309}.tag.done{background:#15803d}
+.pct{font-size:.85rem;margin-left:6px}
+.bar{height:8px;border-radius:4px;background:#8883;margin:6px 0 4px;overflow:hidden}
+.bar i{display:block;height:100%;background:#2563eb}
+.bar.pause i{background:#b45309}.bar.done i{background:#15803d}
 @media(max-width:640px){th,td{padding:6px;font-size:.9rem}}
 </style></head><body><h1>TripoSR 3D 貓動畫</h1><p id="go"><a class="btn" href="https://pet.jieyue.app" rel="noopener noreferrer">開啟</a> <span class="note">需老闆電腦開著</span></p><p id="off" hidden>目前離線（需老闆電腦開著）</p><script>
 function once(u){var c=new AbortController();setTimeout(function(){c.abort()},8000);

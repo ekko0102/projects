@@ -1,0 +1,140 @@
+{
+  "title": "C8KCZ 專案一覽",
+  "intro": "點任一列（或「開啟」）可以直接在瀏覽器操作該專案。進度欄顯示狀態、完成度與下一步。標示「需老闆電腦開著」的專案跑在老闆的電腦上，電腦沒開時會顯示「目前離線」；標示「尚無線上版」的是桌面程式或還沒有網頁版的專案。",
+  "publish": {
+    "owner": "ekko0102",
+    "repo": "projects",
+    "repo_dir": "pages-repo",
+    "subdir": "",
+    "push": true
+  },
+  "categories": [
+    {
+      "name": "💻 網站、遊戲、工具",
+      "projects": [
+        {
+          "id": "pet3d",
+          "show": true,
+          "name": "TripoSR 3D 貓動畫",
+          "desc": "一張寵物照片或一句文字，自動做成會動的 3D 模型（待機、跳、走路等動作），可下載影片與 3D 檔。",
+          "status": "🔄 雛型可操作",
+          "url": "https://pet.jieyue.app",
+          "kind": "backend",
+          "ping": "/__alive",
+          "offline_note": "目前離線（需老闆電腦開著）",
+          "state": "進行中",
+          "percent": 70,
+          "next": "提升畫質與動作自然度（對照真貓照片）",
+          "updated": "2026-11-24"
+        },
+        {
+          "id": "website",
+          "show": true,
+          "name": "個人網站",
+          "desc": "C8KCZ 的個人網站與作品列表。",
+          "status": "✅ 上線",
+          "url": "https://ekko0102.github.io/",
+          "state": "完成",
+          "percent": 100,
+          "updated": "2026-11-24"
+        },
+        {
+          "id": "sts2",
+          "show": true,
+          "name": "殺戮尖塔 2 顧問（STS2 Advisor）",
+          "desc": "遊戲時的浮動小視窗，辨識畫面後替卡牌、遺物、商店評分。",
+          "status": "✅ 可用",
+          "url": "",
+          "offline_note": "尚無線上版（桌面程式）",
+          "state": "完成",
+          "percent": 100,
+          "updated": "2026-11-24"
+        },
+        {
+          "id": "mmn",
+          "show": true,
+          "name": "Unity 專案 MMNproject",
+          "desc": "Lowpoly 場景與物理模擬的 Unity 遊戲專案。",
+          "status": "⏸ 暫停",
+          "url": "",
+          "offline_note": "尚無線上版",
+          "state": "暫停",
+          "percent": 30,
+          "next": "待決定下一步（另有 VR 遊戲構想）",
+          "updated": "2026-11-24"
+        },
+        {
+          "id": "agentcompany",
+          "show": true,
+          "name": "AgentCompany",
+          "desc": "用多個 AI 員工分工的個人助理系統（秘書、工程、研究等部門）。",
+          "status": "🔄 營運中",
+          "url": "",
+          "offline_note": "尚無線上版（內部系統）",
+          "state": "進行中",
+          "percent": 80,
+          "next": "持續營運與擴充部門",
+          "updated": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "name": "🎵 音樂與音訊",
+      "projects": [
+        {
+          "id": "stemstudio",
+          "show": true,
+          "name": "Stem Studio",
+          "desc": "AI 編曲網頁：歌曲分軌、多軌介面、AI 挑素材換聲部與生成樂句，可匯出到編曲軟體。",
+          "status": "⏸ 暫停",
+          "url": "",
+          "offline_note": "尚無線上版",
+          "state": "暫停",
+          "percent": 70,
+          "next": "修 AI 生成鋼琴段落的報錯；「日蝕」鋼琴版本待試聽",
+          "updated": "2026-11-24"
+        },
+        {
+          "id": "harmonic",
+          "show": true,
+          "name": "C8KCZ 梵音列（Harmonic Sculptor）",
+          "desc": "泛音雕塑音訊外掛（VST3／AU）：追蹤音高，個別調整各次泛音的音量。",
+          "status": "🔄 開發中（V3 核心完成）",
+          "url": "",
+          "offline_note": "尚無線上版（桌面外掛）",
+          "state": "進行中",
+          "percent": 60,
+          "next": "Vocal Mode、樂器設定檔、Target Matching",
+          "updated": "2026-11-24"
+        },
+        {
+          "id": "beatmarket",
+          "show": true,
+          "name": "Beat Marketplace",
+          "desc": "台灣版的 Beat 交易平台。",
+          "status": "⏸ 暫停",
+          "url": "",
+          "offline_note": "尚無線上版",
+          "state": "暫停",
+          "percent": 40,
+          "next": "待指示",
+          "updated": "2026-11-24"
+        },
+        {
+          "id": "aivoice",
+          "show": true,
+          "name": "AI 歌聲轉換",
+          "desc": "用 AI 把歌聲換成另一種音色的實驗。",
+          "status": "⏸ 實驗中",
+          "url": "",
+          "offline_note": "尚無線上版",
+          "state": "暫停",
+          "percent": 20,
+          "next": "是否繼續待決定",
+          "updated": "2026-11-24"
+        }
+      ]
+    }
+  ],
+  "site_url": "https://projects.jieyue.app"
+}
